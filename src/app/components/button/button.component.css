@@ -1,0 +1,43 @@
+.primary {
+  background-color: var(--color-four);
+  color: var(--color-one);
+  border: solid var(--color-four);
+  min-height: 40px;
+  min-width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.primary-outlined {
+  color: var(--color-four);
+  border: solid var(--color-four);
+  background-color: var(--color-one);
+  min-height: 40px;
+  min-width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.primary:hover {
+  cursor: pointer;
+}
+
+.link {
+  border: none;
+  color: var(--color-five);
+  background-color: transparent;
+  font-size: 18px;
+}
+
+.link:hover {
+  border-bottom: solid var(--color-five) 1px;
+  cursor: pointer;
+}
+
+.disabled {
+  opacity: 0.5;
+}

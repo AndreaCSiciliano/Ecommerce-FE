@@ -1,0 +1,37 @@
+.container{
+  width: 45vw;
+  text-align: center;
+  margin: 30px;
+}
+
+.bar{
+  width: 16%;
+  height: 0.063em;
+  margin-bottom:0.469em;
+  border: 0.031em solid var(--color-five);
+  background-color: var(--color-five);
+  display: inline-block;
+  text-align:center;
+  margin:"0 auto";
+}
+
+.icon {
+  font-size: 30px;
+  color: var(--color-five);
+}
+
+.active {
+  color: #8cd37d;
+}
+
+
+@media only screen
+  and (min-device-width: 50px)
+  and (max-device-width: 450px) {
+  .icon {
+    font-size: 25px;
+  }
+  .container {
+    width: 70vw;
+  }
+}

@@ -1,0 +1,9 @@
+<div *ngIf="show"class="container">
+  <div class="content">
+    <span>Total</span>
+    <div class="total">
+      <ng-content></ng-content>
+    </div>
+  </div>
+  <app-button modifier="primary" (onClick)="clicked($event)">Proceed to Checkout</app-button>
+</div>

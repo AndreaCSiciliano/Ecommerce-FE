@@ -1,0 +1,42 @@
+.cart-button {
+  background-color: var(--color-four);
+  color: var(--color-one);
+  border: solid var(--color-four);
+  height: 40px;
+  width: 100px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.cart-button:hover,
+.cart-button:focus {
+  outline: none;
+}
+
+.cart-button:active {
+  transform: scale(0.99);
+}
+
+.small {
+  height: 30px;
+  width: 55px;
+  font-size: 12px;
+  background-color: var(--color-one);
+  border: solid var(--color-four);
+}
+
+.bag {
+  font-size: 15px;
+  color: var(--color-four);
+}
+
+
+@media only screen
+  and (min-device-width: 736px)
+  and (max-device-width: 2000px){
+    .bag {
+      font-size: 18px;
+    }
+  }

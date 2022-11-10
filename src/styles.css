@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+
+:root {
+  --color-one: #ffffff;
+  --color-two: #f88a30;
+  --color-three: #facfad;
+  --color-four: #3e4e50;
+  --color-five: #848c8e;
+}
+
+body {
+  background-color: var(--color-three);
+  color: var(--color-four);
+  font-family: Lato;
+  padding: 0;
+  margin: 0;
+}
