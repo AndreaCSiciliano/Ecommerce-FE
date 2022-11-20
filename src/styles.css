@@ -2,12 +2,16 @@
 @import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
 
 :root {
-  --color-one: #ffffff;
-  --color-two: #f88a30;
-  --color-three: #facfad;
-  --color-four: #3e4e50;
-  --color-five: #848c8e;
+  --color-one: #eaefed;
+  --color-two: #2428ab;
+  --color-three: #2e88b694;
+  --color-four: #3a3d41;
+  --color-five: #18181a;
 }
+
+/* 1: bar, number; 2: button, icons; 3: background;
+   4: words; 5: lens, other icons
+*/
 
 body {
   background-color: var(--color-three);

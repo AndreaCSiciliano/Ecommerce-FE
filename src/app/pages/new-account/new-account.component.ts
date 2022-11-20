@@ -52,7 +52,7 @@ export class NewAccountComponent implements OnInit {
     }, {validators: this.checkPasswords});
   }
 
-  checkPasswords(form: FormGroup) { //'passwords' group
+  checkPasswords(form: any) { //'passwords' group
     let pass = form.get('password')?.value;
     let confirmPassword = form.get('confirmPassword')?.value;
 

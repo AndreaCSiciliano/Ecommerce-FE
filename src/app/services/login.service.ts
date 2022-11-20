@@ -35,7 +35,7 @@ export class LoginService {
   }
 
   constructor(private http: HttpClient, private router: Router) {
-    this.router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe((e: NavigationEnd) => this.lastUrl = e.url);
+    this.router.events.pipe(filter(e => e instanceof NavigationEnd)).subscribe((e: any) => this.lastUrl = e.url);
   }
 
   isUserLoggedIn(): boolean {
