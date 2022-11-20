@@ -1,8 +1,8 @@
-import { AuthenticationUser } from "./authentication-user";
+import { UserDto } from "./authentication-user";
 import { PaymentMethod } from "./payment-method";
 import { Role } from "./role";
 
-export interface User extends AuthenticationUser{
+export interface User extends UserDto{
   id?: number,
   name: string,
   address: string,

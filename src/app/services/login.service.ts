@@ -7,7 +7,7 @@ import { tap, filter } from "rxjs/operators";
 import { BASE_URL } from '../app.api';
 
 import { ApiResponse } from '../models/api-response';
-import { AuthenticationUser } from '../models/authentication-user';
+import { UserDto } from '../models/authentication-user';
 
 import { User } from '../models/user';
 
@@ -16,11 +16,11 @@ import { User } from '../models/user';
 })
 export class LoginService {
 
-  private _authenticationUser!: AuthenticationUser;
+  private _authenticationUser!: UserDto;
   lastUrl!: string;
 
-  get authenticationUser(): AuthenticationUser {
-    const authenticationUser: AuthenticationUser = {
+  get authenticationUser(): UserDto {
+    const authenticationUser: UserDto = {
       email: localStorage.getItem('userEmail')!,
       token: localStorage.getItem('userToken')!
     }
@@ -42,8 +42,8 @@ export class LoginService {
     return this.authenticationUser.email !== null || this.authenticationUser.token !== null;
   }
 
-  login(email: string, password: string): Observable<ApiResponse<AuthenticationUser>> {
-    return this.http.post<ApiResponse<AuthenticationUser>>(`${BASE_URL}/auth`, {email: email, password: password}).pipe(tap(res => this.authenticationUser = res.data));
+  login(email: string, password: string): Observable<ApiResponse<UserDto>> {
+    return this.http.post<ApiResponse<UserDto>>(`${BASE_URL}/auth`, {email: email, password: password}).pipe(tap(res => this.authenticationUser = res.data));
   }
 
   handleLogin(path: string = this.lastUrl) {
@@ -54,7 +54,7 @@ export class LoginService {
     this.authenticationUser = undefined!;
   }
 
-  updateLoginUser(authenticationUser: AuthenticationUser) {
+  updateLoginUser(authenticationUser: UserDto) {
     this.authenticationUser = authenticationUser;
   }
 

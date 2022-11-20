@@ -7,6 +7,9 @@ import { ObservableService } from './services/observable.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  title(title: any) {
+    throw new Error('Method not implemented.');
+  }
 
   constructor(private observableService: ObservableService) { }
 
