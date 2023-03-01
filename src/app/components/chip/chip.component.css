@@ -1,0 +1,36 @@
+.menu-item {
+  background-color: var(--color-two);
+  border-radius: 10px;
+  color: var(--color-one);
+  font-weight: 600;
+  height: 16px;
+  padding: 10px;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.product-price {
+  background-color: var(--color-two);
+  border-radius: 7px;
+  color: var(--color-one);
+  font-weight: 500;
+  height: 10px;
+  min-width: 45px;
+  padding: 7px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media only screen
+  and (min-device-width: 736px)
+  and (max-device-width: 2000px){
+    .menu-item {
+      font-size: 16px;
+      height: 20px;
+    }
+    .product-price {
+      font-size: 16px;
+    }
+  }

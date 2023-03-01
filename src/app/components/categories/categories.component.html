@@ -1,0 +1,10 @@
+<div class="categories">
+  <div *ngFor="let category of categories" class="category-item">
+    <div (click)="handleClick(category)">
+      <app-chip
+        value=Category{{category}}
+        modifier="menu-item"
+        ></app-chip>
+    </div>
+  </div>
+</div>

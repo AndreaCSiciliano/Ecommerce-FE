@@ -1,0 +1,12 @@
+<fa-icon [icon]="faBars" class="sidebarIcon" (click)="handleOnIconClick()"></fa-icon>
+<div class="sidebar" [ngClass]="{'sidebar-slide-in': isOpen}">
+  <div class="menu-items" (click)="handleOnMenuItemClick()">
+    <img src="assets/img/logo.png"/>
+    <a *ngIf="!isUserLoggedIn()" [routerLink]="['/login']">Login</a>
+    <a *ngIf="isUserLoggedIn()" [routerLink]="['/account']">My Account</a>
+    <a [routerLink]="['/orders']">Orders</a>
+  </div>
+</div>
+<div [ngClass]="{'backdrop': isOpen}">
+  <ng-content></ng-content>
+</div>

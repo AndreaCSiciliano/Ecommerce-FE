@@ -1,0 +1,24 @@
+<div class="container">
+  <div class="card">
+    <h1>{{user.name}}</h1>
+    <div class="content">
+      <div class="text-group">
+        <span>Address</span>
+        <span >{{user.address}}</span>
+        <span>{{user.number}}</span>
+      </div>
+      <div class="text-group">
+        <span>Main payment method </span>
+        <span>{{user.mainPaymentMethod | paymentMethod}}</span>
+      </div>
+      <div class="text-group">
+        <span>E-mail</span>
+        <span>{{user.email}}</span>
+      </div>
+    </div>
+    <div class="button-group">
+      <app-button modifier="link" (onClick)="goToOrders()">My Orders</app-button>
+      <app-button modifier="primary" (onClick)="goToEditInformation()">Edit Information</app-button>
+    </div>
+  </div>
+</div>
