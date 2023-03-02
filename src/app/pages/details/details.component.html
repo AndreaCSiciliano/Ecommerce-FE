@@ -7,7 +7,7 @@
     </div>
     <div class="checkout">
       <div class="price">{{product.price | currency: 'euro': 'symbol'}}</div>
-      <app-cart-button></app-cart-button>
+      <app-cart-button modifier="small" [selectedProduct]="product"></app-cart-button>
     </div>
   </div>
 </div>
