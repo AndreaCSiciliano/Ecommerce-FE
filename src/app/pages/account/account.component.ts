@@ -25,6 +25,9 @@ export class AccountComponent implements OnInit {
     })
   }
 
+  logout() {
+  }
+
   goToEditInformation() {
   }
 
