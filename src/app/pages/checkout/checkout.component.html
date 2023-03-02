@@ -42,7 +42,7 @@
         This e-mail is not valid!
       </span>
       <div class="buttons">
-        <app-button modifier="link">Cancel</app-button>
+        <app-button [routerLink]="['']" modifier="link">Cancel</app-button>
         <app-button modifier="primary" [disabled]="!checkoutForm.valid" (onClick)="submit()">
           Finish order
         </app-button>
