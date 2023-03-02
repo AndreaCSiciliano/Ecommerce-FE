@@ -50,7 +50,7 @@ export class CheckoutComponent implements OnInit {
       number: new FormControl('', {
         validators: [Validators.required]
       }),
-      paymentMethods: new FormControl('', {
+      paymentMethod: new FormControl('', {
         validators: [Validators.required]
       }),
       shippingMethod: new FormControl('', {
