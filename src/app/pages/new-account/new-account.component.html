@@ -51,7 +51,7 @@
         Passwords do not match
       </span>
       <div class="buttons">
-        <app-button modifier="link">Cancel</app-button>
+        <app-button [routerLink]="['']" modifier="link">Cancel</app-button>
         <app-button
           modifier="primary"
           [disabled]="!newAccountForm.valid"
