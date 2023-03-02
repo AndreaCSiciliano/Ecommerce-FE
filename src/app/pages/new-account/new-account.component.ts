@@ -46,7 +46,7 @@ export class NewAccountComponent implements OnInit {
       number: new FormControl('', {
         validators: [Validators.required]
       }),
-      PaymentMethod: new FormControl('', {
+      paymentMethod: new FormControl('', {
         validators: [Validators.required]
       })
     }, {validators: this.checkPasswords});
