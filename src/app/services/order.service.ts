@@ -33,7 +33,7 @@ export class OrderService {
   }
 
   public getOrdersByUser(): Observable<ApiResponse<Order[]>> {
-    return this.http.get<ApiResponse<Order[]>>(`${BASE_URL}/api/order`);
+    return this.http.get<ApiResponse<Order[]>>(`${BASE_URL}/api/order/orders`);
   }
 
   public getOrderById(orderId: number): Observable<ApiResponse<Order>> {
